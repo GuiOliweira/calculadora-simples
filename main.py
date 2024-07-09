@@ -9,7 +9,7 @@ def Menu():
             Subtrair()
             break
         elif escolha == 3:
-            # Multiplicar()
+            Multiplicar()
             break
         elif escolha == 4:
             # Dividir()
@@ -50,6 +50,25 @@ def Subtrair():
         escolha = int(input("Deseja um novo cálculo? (1-Sim 2-Não): "))
         if escolha == 1:
             Subtrair()
+            break
+        elif escolha == 2:
+            Menu()
+            break
+        else:
+            print("\nOpção inválida, tente novamente...\n")
+
+
+def Multiplicar():
+    n1 = int(input("Digite o primeiro numero: "))
+    n2 = int(input("Digite o segundo numero: "))
+    mult = n1 * n2
+
+    print(f"\nA multiplicação de {n1} * {n2} é: {mult}\n")
+
+    while True:
+        escolha = int(input("Deseja um novo cálculo? (1-Sim 2-Não): "))
+        if escolha == 1:
+            Multiplicar()
             break
         elif escolha == 2:
             Menu()
