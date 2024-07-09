@@ -6,7 +6,7 @@ def Menu():
             Soma()
             break
         elif escolha == 2:
-            # Subtrair()
+            Subtrair()
             break
         elif escolha == 3:
             # Multiplicar()
@@ -28,9 +28,28 @@ def Soma():
     print(f"\nA soma de {n1} + {n2} é: {soma}\n")
 
     while True:
-        escolha = int(input("Deseja uma nova soma? (1-Sim 2-Não): "))
+        escolha = int(input("Deseja um novo cálculo? (1-Sim 2-Não): "))
         if escolha == 1:
             Soma()
+            break
+        elif escolha == 2:
+            Menu()
+            break
+        else:
+            print("\nOpção inválida, tente novamente...\n")
+
+
+def Subtrair():
+    n1 = int(input("Digite o primeiro numero: "))
+    n2 = int(input("Digite o segundo numero: "))
+    subt = n1 - n2
+
+    print(f"\nA subtração de {n1} - {n2} é: {subt}\n")
+
+    while True:
+        escolha = int(input("Deseja um novo cálculo? (1-Sim 2-Não): "))
+        if escolha == 1:
+            Subtrair()
             break
         elif escolha == 2:
             Menu()
