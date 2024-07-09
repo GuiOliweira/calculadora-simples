@@ -6,13 +6,13 @@ def Menu():
             Soma()
             break
         elif escolha == 2:
-            Subtrair()
+            # Subtrair()
             break
         elif escolha == 3:
-            Multiplicar()
+            # Multiplicar()
             break
         elif escolha == 4:
-            Dividir()
+            # Dividir()
             break
         elif escolha == 5:
             break
